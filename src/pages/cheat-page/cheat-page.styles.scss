@@ -1,0 +1,8 @@
+@import '../../styles/global.styles.scss';
+.cheat-page {
+	display: flex;
+	flex-flow: row wrap;
+	flex-grow: 1;
+	background: url("../../assets/images/background.jpg") fixed center;
+	padding-top: 5rem;
+}
