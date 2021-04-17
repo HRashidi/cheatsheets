@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../../components/header/header.component';
 import Breadcrumb from '../../components/breadcrumb/breadcrumb.component';
 
+import CheatBoard from '../../components/cheat-board/cheat-board.component';
 // fetch(`/src/data/${dataName}.json`)
 // 		.then((res) => res.json())
 // 		.then((videos) => videos.filter((video) => {
@@ -45,27 +46,22 @@ const CheatPage = ({match}) => {
 			<Header onChange={handleChange}/>
 			<Breadcrumb items={bread_items} />
 
-			<div className="content">
-
+			<div className="board-container">
+				<CheatBoard />
+				<CheatBoard />
+				<CheatBoard />
+				<CheatBoard />
+				<CheatBoard />
+				<CheatBoard />
+				<CheatBoard />
+				<CheatBoard />
+				<CheatBoard />
+				<CheatBoard />
+				<CheatBoard />
+				<CheatBoard />
+				<CheatBoard />
 			</div>
-			cheat <br/>
-			cheat <br/>
-			cheat <br/>
-			cheat <br/>
-			cheat <br/>
-			cheat <br/>
-			cheat <br/>
-			cheat <br/>
-			cheat <br/>
-			cheat <br/>
-			cheat <br/>
-			cheat <br/>
-			cheat <br/>
-			cheat <br/>
-			cheat <br/>
-			cheat <br/>
-			cheat <br/>
-			cheat <br/>
+			
 		</div>
 	)
 

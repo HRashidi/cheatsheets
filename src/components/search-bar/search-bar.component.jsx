@@ -1,22 +1,24 @@
 import React from 'react';
 
-import { connect } from 'react-redux';
-import { toggleSearchHidden } from '../../redux/view/view.actions';
-
 import { ReactComponent as SearchingIcon} from '../../assets/images/search-icon.svg';
+import FormInput from '../form-input/form-input.component';
+import './search-bar.styles.scss';
 
-import './search-icon.styles.scss';
 
-
-const SearchIcon = ({toggleSearchHidden, children}) => (
-	<div className="search-icon" onClick={toggleSearchHidden}>
+const SearchBar = ({ onChange }) => {
+	const handleChange = e => {
+		if(onChange) onChange(e);
+	}
+	return (
+	<div className="search-bar">
 		<SearchingIcon className="icon" />
-		{children}
+		<FormInput 
+			type='search'
+			name='search'
+			placeholder='command ...'
+			handleChange={handleChange}
+			required/>
 	</div>
-);
+)};
 
-const mapDispatchToProps = dispatch => ({
-	toggleSearchHidden: () => dispatch(toggleSearchHidden())
-})
-
-export default connect(null, mapDispatchToProps)(SearchIcon);
+export default SearchBar;

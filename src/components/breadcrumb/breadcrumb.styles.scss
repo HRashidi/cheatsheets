@@ -9,8 +9,7 @@
 		margin: 0;
 		li {
 			display: inline;
-			
-			float: right;
+			float: left;
 			display: table;
 			span {
 				height: 2rem;
@@ -18,12 +17,14 @@
 				text-align: center;
 				vertical-align: middle;
 				color: $color-primary-fg;
-
+				a {
+					color: inherit;
+				}
 				&.active {
 					color: $color-title-fg;
 				}
 				a:hover {
-					color: #333333;
+					color: $color-secondary-fg;
 				}
 			}
 

@@ -4,5 +4,11 @@
 	flex-flow: row wrap;
 	flex-grow: 1;
 	background: url("../../assets/images/background.jpg") fixed center;
-	padding-top: 5rem;
+	padding-top: 4rem;
+
+	.board-container {
+		// https://stackoverflow.com/questions/34677003/css-flexbox-divs-auto-change-order-to-fill-empty-space
+		display: flex;
+		flex-flow: row wrap;
+	}
 }

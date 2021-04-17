@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Logo from '../../assets/images/xlord.png';
+import SearchBar from '../search-bar/search-bar.component';
 import './header.styles.scss';
 
 
@@ -19,12 +20,10 @@ const Header = ({onChange}) => {
 				Cheat Sheet Repo
 			</div>
 		</div>
-		{/* <FormInput 
-			type='search'
-			name='search'
-			placeholder='command ...'
-			handleChange={handleChange}
-			required/> */}
+		<div className="search-container">
+			<SearchBar handleChange={handleChange}/>
+		</div>
+		
 	</div>
 )};
 
