@@ -10,7 +10,8 @@ import Footer    from './components/footer/footer.component';
 
 
 const App = () => {
-	let rootUrl = '/cheatsheets';
+	let rootUrl = process.env.PUBLIC_URL;
+	
 	return (
 		<div className="App">
 			<Router ref={registerNav}>

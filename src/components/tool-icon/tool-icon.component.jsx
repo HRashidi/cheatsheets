@@ -8,8 +8,8 @@ const ToolIcon = ({ title, routeName, imageUrl}) => {
 	return (
 	<div className="tool-icon">
 		<div className="icon">
-			<Link to={routeName} >
-				<img  src={process.env.PUBLIC_URL + imageUrl} alt={title}/>
+			<Link to={process.env.PUBLIC_URL + routeName} >
+				<img src={process.env.PUBLIC_URL + imageUrl} alt={title}/>
 			</Link>
 		</div>
 		<div className="title">
