@@ -10,13 +10,14 @@ import Footer    from './components/footer/footer.component';
 
 
 const App = () => {
+	let rootUrl = '/cheatsheets';
 	return (
 		<div className="App">
 			<Router ref={registerNav}>
 				<Switch>
-					<Route exact path='/' component={MainPage} />
-					<Route path='/:name' component={CheatPage} />
-					<Redirect to='/' />
+					<Route exact path={`${rootUrl}`} component={MainPage} />
+					<Route path={`${rootUrl}/:name`} component={CheatPage} />
+					<Redirect to={`${rootUrl}`} />
 				</Switch>
 				<Footer />
 			</Router>
