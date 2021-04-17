@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/cheatsheets/static/css/main.060816ee.chunk.css",
-    "main.js": "/cheatsheets/static/js/main.90f1547d.chunk.js",
-    "main.js.map": "/cheatsheets/static/js/main.90f1547d.chunk.js.map",
-    "runtime-main.js": "/cheatsheets/static/js/runtime-main.5be72fae.js",
-    "runtime-main.js.map": "/cheatsheets/static/js/runtime-main.5be72fae.js.map",
-    "static/js/2.6f4237ca.chunk.js": "/cheatsheets/static/js/2.6f4237ca.chunk.js",
-    "static/js/2.6f4237ca.chunk.js.map": "/cheatsheets/static/js/2.6f4237ca.chunk.js.map",
-    "static/js/3.af45dce0.chunk.js": "/cheatsheets/static/js/3.af45dce0.chunk.js",
-    "static/js/3.af45dce0.chunk.js.map": "/cheatsheets/static/js/3.af45dce0.chunk.js.map",
+    "main.css": "/cheatsheets/static/css/main.af842c70.chunk.css",
+    "main.js": "/cheatsheets/static/js/main.5f001b22.chunk.js",
+    "main.js.map": "/cheatsheets/static/js/main.5f001b22.chunk.js.map",
+    "runtime-main.js": "/cheatsheets/static/js/runtime-main.9a7e23f3.js",
+    "runtime-main.js.map": "/cheatsheets/static/js/runtime-main.9a7e23f3.js.map",
+    "static/js/2.28f0a902.chunk.js": "/cheatsheets/static/js/2.28f0a902.chunk.js",
+    "static/js/2.28f0a902.chunk.js.map": "/cheatsheets/static/js/2.28f0a902.chunk.js.map",
+    "static/js/3.142f3ecb.chunk.js": "/cheatsheets/static/js/3.142f3ecb.chunk.js",
+    "static/js/3.142f3ecb.chunk.js.map": "/cheatsheets/static/js/3.142f3ecb.chunk.js.map",
     "index.html": "/cheatsheets/index.html",
-    "static/css/main.060816ee.chunk.css.map": "/cheatsheets/static/css/main.060816ee.chunk.css.map",
-    "static/js/2.6f4237ca.chunk.js.LICENSE.txt": "/cheatsheets/static/js/2.6f4237ca.chunk.js.LICENSE.txt",
+    "static/css/main.af842c70.chunk.css.map": "/cheatsheets/static/css/main.af842c70.chunk.css.map",
+    "static/js/2.28f0a902.chunk.js.LICENSE.txt": "/cheatsheets/static/js/2.28f0a902.chunk.js.LICENSE.txt",
+    "static/media/search-icon.65a7fd14.svg": "/cheatsheets/static/media/search-icon.65a7fd14.svg",
     "static/media/xlord.ed0ca738.png": "/cheatsheets/static/media/xlord.ed0ca738.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.5be72fae.js",
-    "static/js/2.6f4237ca.chunk.js",
-    "static/css/main.060816ee.chunk.css",
-    "static/js/main.90f1547d.chunk.js"
+    "static/js/runtime-main.9a7e23f3.js",
+    "static/js/2.28f0a902.chunk.js",
+    "static/css/main.af842c70.chunk.css",
+    "static/js/main.5f001b22.chunk.js"
   ]
 }
