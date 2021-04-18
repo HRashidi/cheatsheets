@@ -1,7 +1,32 @@
 @import '../../styles/global.styles.scss';
 .cheat-board {
-	width: 20rem;
+	width: 20%;
+	max-width: 20rem;
+	flex-grow: 1;
 	border-radius: .5rem;
 	background-color: #5F2B65aa;
 	margin: .5rem;
+	
+
+	.board-card-title {
+		color: blue;
+		
+		&.inactive {
+			color: red;
+		}
+	}
+
+	.cmd  {
+		color: blue;
+		&.inactive {
+			color: red;
+		}
+	}
+
+	.tip  {
+		color: blue;
+		&.inactive {
+			color: red;
+		}
+	}
 }

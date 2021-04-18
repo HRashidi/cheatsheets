@@ -16,8 +16,7 @@ const SearchBar = ({ onChange }) => {
 			type='search'
 			name='search'
 			placeholder='command ...'
-			handleChange={handleChange}
-			required/>
+			handleChange={handleChange}	/>
 	</div>
 )};
 

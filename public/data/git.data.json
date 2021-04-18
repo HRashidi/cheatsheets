@@ -1,12 +1,1021 @@
 [
 	{
-		"title": "init",
-		"url" : "hello",
-		"color": "green",
-		"command": [
+		"_id" : 1,
+		"title" : "Merge/Rebase",
+		"cards" : [
 			{
-				"title": "git init",
-				"example": "git init"
+				"title" : "Merge branch into current",
+				"commands" : [
+					{
+						"cmd": "git merge branch"
+					}
+				]
+			},
+			{
+				"title" : "Rebase into branch",
+				"commands" : [
+					{
+						"cmd": "git rebase branch"
+					},
+					{
+						"cmd": "git rebase master branch"
+					}
+				]
+			},
+			{
+				"title" : "Abort rebase",
+				"commands" : [
+					{
+						"cmd": "git rebase --abort"
+					}
+				]
+			},
+			{
+				"title" : "Merge tool to solve conflicts",
+				"commands" : [
+					{
+						"cmd": "git mergetool"
+					}
+				]
+			},
+			{
+				"title" : "To view the merge conflicts",
+				"commands" : [
+					{
+						"cmd": "git diff",
+						"tip": "complete conflict diff"
+					},
+					{
+						"cmd": "git diff --base $file",
+						"tip": "against base file"
+					},
+					{
+						"cmd": "git diff --ours $file",
+						"tip": "against your changes"
+					},
+					{
+						"cmd": "git diff --theirs $file",
+						"tip": "against other changes"
+					}
+				]
+			},
+			{
+				"title" : "To discard conflicting patch",
+				"commands" : [
+					{
+						"cmd": "git reset --hard"
+					},
+					{
+						"cmd": "git rebase --skip"
+					}
+				]
+			},
+			{
+				"title" : "After resolving conflicts",
+				"commands" : [
+					{
+						"cmd": "git add $conflicting_file",
+						"tip": "do for all resolved files"
+					},
+					{
+						"cmd": "git rebase --continue"
+					}
+				]
+			}
+		]
+	},
+	{
+		"_id" : 2,
+		"title" : "Merge/Rebase",
+		"cards" : [
+			{
+				"title" : "Merge branch into current",
+				"commands" : [
+					{
+						"cmd": "git merge branch"
+					}
+				]
+			},
+			{
+				"title" : "Rebase into branch",
+				"commands" : [
+					{
+						"cmd": "git rebase branch"
+					},
+					{
+						"cmd": "git rebase master branch"
+					}
+				]
+			},
+			{
+				"title" : "Abort rebase",
+				"commands" : [
+					{
+						"cmd": "git rebase --abort"
+					}
+				]
+			},
+			{
+				"title" : "Merge tool to solve conflicts",
+				"commands" : [
+					{
+						"cmd": "git mergetool"
+					}
+				]
+			},
+			{
+				"title" : "To view the merge conflicts",
+				"commands" : [
+					{
+						"cmd": "git diff",
+						"tip": "complete conflict diff"
+					},
+					{
+						"cmd": "git diff --base $file",
+						"tip": "against base file"
+					},
+					{
+						"cmd": "git diff --ours $file",
+						"tip": "against your changes"
+					},
+					{
+						"cmd": "git diff --theirs $file",
+						"tip": "against other changes"
+					}
+				]
+			},
+			{
+				"title" : "To discard conflicting patch",
+				"commands" : [
+					{
+						"cmd": "git reset --hard"
+					},
+					{
+						"cmd": "git rebase --skip"
+					}
+				]
+			},
+			{
+				"title" : "After resolving conflicts",
+				"commands" : [
+					{
+						"cmd": "git add $conflicting_file",
+						"tip": "do for all resolved files"
+					},
+					{
+						"cmd": "git rebase --continue"
+					}
+				]
+			}
+		]
+	},
+	{
+		"_id" : 3,
+		"title" : "Merge/Rebase",
+		"cards" : [
+			{
+				"title" : "Merge branch into current",
+				"commands" : [
+					{
+						"cmd": "git merge branch"
+					}
+				]
+			},
+			{
+				"title" : "Rebase into branch",
+				"commands" : [
+					{
+						"cmd": "git rebase branch"
+					},
+					{
+						"cmd": "git rebase master branch"
+					}
+				]
+			},
+			{
+				"title" : "Abort rebase",
+				"commands" : [
+					{
+						"cmd": "git rebase --abort"
+					}
+				]
+			},
+			{
+				"title" : "Merge tool to solve conflicts",
+				"commands" : [
+					{
+						"cmd": "git mergetool"
+					}
+				]
+			},
+			{
+				"title" : "To view the merge conflicts",
+				"commands" : [
+					{
+						"cmd": "git diff",
+						"tip": "complete conflict diff"
+					},
+					{
+						"cmd": "git diff --base $file",
+						"tip": "against base file"
+					},
+					{
+						"cmd": "git diff --ours $file",
+						"tip": "against your changes"
+					},
+					{
+						"cmd": "git diff --theirs $file",
+						"tip": "against other changes"
+					}
+				]
+			},
+			{
+				"title" : "To discard conflicting patch",
+				"commands" : [
+					{
+						"cmd": "git reset --hard"
+					},
+					{
+						"cmd": "git rebase --skip"
+					}
+				]
+			},
+			{
+				"title" : "After resolving conflicts",
+				"commands" : [
+					{
+						"cmd": "git add $conflicting_file",
+						"tip": "do for all resolved files"
+					},
+					{
+						"cmd": "git rebase --continue"
+					}
+				]
+			}
+		]
+	},
+	{
+		"_id" : 4,
+		"title" : "Merge/Rebase",
+		"cards" : [
+			{
+				"title" : "Merge branch into current",
+				"commands" : [
+					{
+						"cmd": "git merge branch"
+					}
+				]
+			},
+			{
+				"title" : "Rebase into branch",
+				"commands" : [
+					{
+						"cmd": "git rebase branch"
+					},
+					{
+						"cmd": "git rebase master branch"
+					}
+				]
+			},
+			{
+				"title" : "Abort rebase",
+				"commands" : [
+					{
+						"cmd": "git rebase --abort"
+					}
+				]
+			},
+			{
+				"title" : "Merge tool to solve conflicts",
+				"commands" : [
+					{
+						"cmd": "git mergetool"
+					}
+				]
+			},
+			{
+				"title" : "To view the merge conflicts",
+				"commands" : [
+					{
+						"cmd": "git diff",
+						"tip": "complete conflict diff"
+					},
+					{
+						"cmd": "git diff --base $file",
+						"tip": "against base file"
+					},
+					{
+						"cmd": "git diff --ours $file",
+						"tip": "against your changes"
+					},
+					{
+						"cmd": "git diff --theirs $file",
+						"tip": "against other changes"
+					}
+				]
+			},
+			{
+				"title" : "To discard conflicting patch",
+				"commands" : [
+					{
+						"cmd": "git reset --hard"
+					},
+					{
+						"cmd": "git rebase --skip"
+					}
+				]
+			},
+			{
+				"title" : "After resolving conflicts",
+				"commands" : [
+					{
+						"cmd": "git add $conflicting_file",
+						"tip": "do for all resolved files"
+					},
+					{
+						"cmd": "git rebase --continue"
+					}
+				]
+			}
+		]
+	},
+	{
+		"_id" : 5,
+		"title" : "Merge/Rebase",
+		"cards" : [
+			{
+				"title" : "Merge branch into current",
+				"commands" : [
+					{
+						"cmd": "git merge branch"
+					}
+				]
+			},
+			{
+				"title" : "Rebase into branch",
+				"commands" : [
+					{
+						"cmd": "git rebase branch"
+					},
+					{
+						"cmd": "git rebase master branch"
+					}
+				]
+			},
+			{
+				"title" : "Abort rebase",
+				"commands" : [
+					{
+						"cmd": "git rebase --abort"
+					}
+				]
+			},
+			{
+				"title" : "Merge tool to solve conflicts",
+				"commands" : [
+					{
+						"cmd": "git mergetool"
+					}
+				]
+			},
+			{
+				"title" : "To view the merge conflicts",
+				"commands" : [
+					{
+						"cmd": "git diff",
+						"tip": "complete conflict diff"
+					},
+					{
+						"cmd": "git diff --base $file",
+						"tip": "against base file"
+					},
+					{
+						"cmd": "git diff --ours $file",
+						"tip": "against your changes"
+					},
+					{
+						"cmd": "git diff --theirs $file",
+						"tip": "against other changes"
+					}
+				]
+			},
+			{
+				"title" : "To discard conflicting patch",
+				"commands" : [
+					{
+						"cmd": "git reset --hard"
+					},
+					{
+						"cmd": "git rebase --skip"
+					}
+				]
+			},
+			{
+				"title" : "After resolving conflicts",
+				"commands" : [
+					{
+						"cmd": "git add $conflicting_file",
+						"tip": "do for all resolved files"
+					},
+					{
+						"cmd": "git rebase --continue"
+					}
+				]
+			}
+		]
+	},
+	{
+		"_id" : 6,
+		"title" : "Merge/Rebase",
+		"cards" : [
+			{
+				"title" : "Merge branch into current",
+				"commands" : [
+					{
+						"cmd": "git merge branch"
+					}
+				]
+			},
+			{
+				"title" : "Rebase into branch",
+				"commands" : [
+					{
+						"cmd": "git rebase branch"
+					},
+					{
+						"cmd": "git rebase master branch"
+					}
+				]
+			},
+			{
+				"title" : "Abort rebase",
+				"commands" : [
+					{
+						"cmd": "git rebase --abort"
+					}
+				]
+			},
+			{
+				"title" : "Merge tool to solve conflicts",
+				"commands" : [
+					{
+						"cmd": "git mergetool"
+					}
+				]
+			},
+			{
+				"title" : "To view the merge conflicts",
+				"commands" : [
+					{
+						"cmd": "git diff",
+						"tip": "complete conflict diff"
+					},
+					{
+						"cmd": "git diff --base $file",
+						"tip": "against base file"
+					},
+					{
+						"cmd": "git diff --ours $file",
+						"tip": "against your changes"
+					},
+					{
+						"cmd": "git diff --theirs $file",
+						"tip": "against other changes"
+					}
+				]
+			},
+			{
+				"title" : "To discard conflicting patch",
+				"commands" : [
+					{
+						"cmd": "git reset --hard"
+					},
+					{
+						"cmd": "git rebase --skip"
+					}
+				]
+			},
+			{
+				"title" : "After resolving conflicts",
+				"commands" : [
+					{
+						"cmd": "git add $conflicting_file",
+						"tip": "do for all resolved files"
+					},
+					{
+						"cmd": "git rebase --continue"
+					}
+				]
+			}
+		]
+	},
+	{
+		"_id" : 7,
+		"title" : "Merge/Rebase",
+		"cards" : [
+			{
+				"title" : "Merge branch into current",
+				"commands" : [
+					{
+						"cmd": "git merge branch"
+					}
+				]
+			},
+			{
+				"title" : "Rebase into branch",
+				"commands" : [
+					{
+						"cmd": "git rebase branch"
+					},
+					{
+						"cmd": "git rebase master branch"
+					}
+				]
+			},
+			{
+				"title" : "Abort rebase",
+				"commands" : [
+					{
+						"cmd": "git rebase --abort"
+					}
+				]
+			},
+			{
+				"title" : "Merge tool to solve conflicts",
+				"commands" : [
+					{
+						"cmd": "git mergetool"
+					}
+				]
+			},
+			{
+				"title" : "To view the merge conflicts",
+				"commands" : [
+					{
+						"cmd": "git diff",
+						"tip": "complete conflict diff"
+					},
+					{
+						"cmd": "git diff --base $file",
+						"tip": "against base file"
+					},
+					{
+						"cmd": "git diff --ours $file",
+						"tip": "against your changes"
+					},
+					{
+						"cmd": "git diff --theirs $file",
+						"tip": "against other changes"
+					}
+				]
+			},
+			{
+				"title" : "To discard conflicting patch",
+				"commands" : [
+					{
+						"cmd": "git reset --hard"
+					},
+					{
+						"cmd": "git rebase --skip"
+					}
+				]
+			},
+			{
+				"title" : "After resolving conflicts",
+				"commands" : [
+					{
+						"cmd": "git add $conflicting_file",
+						"tip": "do for all resolved files"
+					},
+					{
+						"cmd": "git rebase --continue"
+					}
+				]
+			}
+		]
+	},
+	{
+		"_id" : 8,
+		"title" : "Merge/Rebase",
+		"cards" : [
+			{
+				"title" : "Merge branch into current",
+				"commands" : [
+					{
+						"cmd": "git merge branch"
+					}
+				]
+			},
+			{
+				"title" : "Rebase into branch",
+				"commands" : [
+					{
+						"cmd": "git rebase branch"
+					},
+					{
+						"cmd": "git rebase master branch"
+					}
+				]
+			},
+			{
+				"title" : "Abort rebase",
+				"commands" : [
+					{
+						"cmd": "git rebase --abort"
+					}
+				]
+			},
+			{
+				"title" : "Merge tool to solve conflicts",
+				"commands" : [
+					{
+						"cmd": "git mergetool"
+					}
+				]
+			},
+			{
+				"title" : "To view the merge conflicts",
+				"commands" : [
+					{
+						"cmd": "git diff",
+						"tip": "complete conflict diff"
+					},
+					{
+						"cmd": "git diff --base $file",
+						"tip": "against base file"
+					},
+					{
+						"cmd": "git diff --ours $file",
+						"tip": "against your changes"
+					},
+					{
+						"cmd": "git diff --theirs $file",
+						"tip": "against other changes"
+					}
+				]
+			},
+			{
+				"title" : "To discard conflicting patch",
+				"commands" : [
+					{
+						"cmd": "git reset --hard"
+					},
+					{
+						"cmd": "git rebase --skip"
+					}
+				]
+			},
+			{
+				"title" : "After resolving conflicts",
+				"commands" : [
+					{
+						"cmd": "git add $conflicting_file",
+						"tip": "do for all resolved files"
+					},
+					{
+						"cmd": "git rebase --continue"
+					}
+				]
+			}
+		]
+	},
+	{
+		"_id" : 9,
+		"title" : "Merge/Rebase",
+		"cards" : [
+			{
+				"title" : "Merge branch into current",
+				"commands" : [
+					{
+						"cmd": "git merge branch"
+					}
+				]
+			},
+			{
+				"title" : "Rebase into branch",
+				"commands" : [
+					{
+						"cmd": "git rebase branch"
+					},
+					{
+						"cmd": "git rebase master branch"
+					}
+				]
+			},
+			{
+				"title" : "Abort rebase",
+				"commands" : [
+					{
+						"cmd": "git rebase --abort"
+					}
+				]
+			},
+			{
+				"title" : "Merge tool to solve conflicts",
+				"commands" : [
+					{
+						"cmd": "git mergetool"
+					}
+				]
+			},
+			{
+				"title" : "To view the merge conflicts",
+				"commands" : [
+					{
+						"cmd": "git diff",
+						"tip": "complete conflict diff"
+					},
+					{
+						"cmd": "git diff --base $file",
+						"tip": "against base file"
+					},
+					{
+						"cmd": "git diff --ours $file",
+						"tip": "against your changes"
+					},
+					{
+						"cmd": "git diff --theirs $file",
+						"tip": "against other changes"
+					}
+				]
+			},
+			{
+				"title" : "To discard conflicting patch",
+				"commands" : [
+					{
+						"cmd": "git reset --hard"
+					},
+					{
+						"cmd": "git rebase --skip"
+					}
+				]
+			},
+			{
+				"title" : "After resolving conflicts",
+				"commands" : [
+					{
+						"cmd": "git add $conflicting_file",
+						"tip": "do for all resolved files"
+					},
+					{
+						"cmd": "git rebase --continue"
+					}
+				]
+			}
+		]
+	},
+	{
+		"_id" : 10,
+		"title" : "Merge/Rebase",
+		"cards" : [
+			{
+				"title" : "Merge branch into current",
+				"commands" : [
+					{
+						"cmd": "git merge branch"
+					}
+				]
+			},
+			{
+				"title" : "Rebase into branch",
+				"commands" : [
+					{
+						"cmd": "git rebase branch"
+					},
+					{
+						"cmd": "git rebase master branch"
+					}
+				]
+			},
+			{
+				"title" : "Abort rebase",
+				"commands" : [
+					{
+						"cmd": "git rebase --abort"
+					}
+				]
+			},
+			{
+				"title" : "Merge tool to solve conflicts",
+				"commands" : [
+					{
+						"cmd": "git mergetool"
+					}
+				]
+			},
+			{
+				"title" : "To view the merge conflicts",
+				"commands" : [
+					{
+						"cmd": "git diff",
+						"tip": "complete conflict diff"
+					},
+					{
+						"cmd": "git diff --base $file",
+						"tip": "against base file"
+					},
+					{
+						"cmd": "git diff --ours $file",
+						"tip": "against your changes"
+					},
+					{
+						"cmd": "git diff --theirs $file",
+						"tip": "against other changes"
+					}
+				]
+			},
+			{
+				"title" : "To discard conflicting patch",
+				"commands" : [
+					{
+						"cmd": "git reset --hard"
+					},
+					{
+						"cmd": "git rebase --skip"
+					}
+				]
+			},
+			{
+				"title" : "After resolving conflicts",
+				"commands" : [
+					{
+						"cmd": "git add $conflicting_file",
+						"tip": "do for all resolved files"
+					},
+					{
+						"cmd": "git rebase --continue"
+					}
+				]
+			}
+		]
+	},
+	{
+		"_id" : 11,
+		"title" : "Merge/Rebase",
+		"cards" : [
+			{
+				"title" : "Merge branch into current",
+				"commands" : [
+					{
+						"cmd": "git merge branch"
+					}
+				]
+			},
+			{
+				"title" : "Rebase into branch",
+				"commands" : [
+					{
+						"cmd": "git rebase branch"
+					},
+					{
+						"cmd": "git rebase master branch"
+					}
+				]
+			},
+			{
+				"title" : "Abort rebase",
+				"commands" : [
+					{
+						"cmd": "git rebase --abort"
+					}
+				]
+			},
+			{
+				"title" : "Merge tool to solve conflicts",
+				"commands" : [
+					{
+						"cmd": "git mergetool"
+					}
+				]
+			},
+			{
+				"title" : "To view the merge conflicts",
+				"commands" : [
+					{
+						"cmd": "git diff",
+						"tip": "complete conflict diff"
+					},
+					{
+						"cmd": "git diff --base $file",
+						"tip": "against base file"
+					},
+					{
+						"cmd": "git diff --ours $file",
+						"tip": "against your changes"
+					},
+					{
+						"cmd": "git diff --theirs $file",
+						"tip": "against other changes"
+					}
+				]
+			},
+			{
+				"title" : "To discard conflicting patch",
+				"commands" : [
+					{
+						"cmd": "git reset --hard"
+					},
+					{
+						"cmd": "git rebase --skip"
+					}
+				]
+			},
+			{
+				"title" : "After resolving conflicts",
+				"commands" : [
+					{
+						"cmd": "git add $conflicting_file",
+						"tip": "do for all resolved files"
+					},
+					{
+						"cmd": "git rebase --continue"
+					}
+				]
+			}
+		]
+	},
+	{
+		"_id" : 12,
+		"title" : "Merge/Rebase",
+		"cards" : [
+			{
+				"title" : "Merge branch into current",
+				"commands" : [
+					{
+						"cmd": "git merge branch"
+					}
+				]
+			},
+			{
+				"title" : "Rebase into branch",
+				"commands" : [
+					{
+						"cmd": "git rebase branch"
+					},
+					{
+						"cmd": "git rebase master branch"
+					}
+				]
+			},
+			{
+				"title" : "Abort rebase",
+				"commands" : [
+					{
+						"cmd": "git rebase --abort"
+					}
+				]
+			},
+			{
+				"title" : "Merge tool to solve conflicts",
+				"commands" : [
+					{
+						"cmd": "git mergetool"
+					}
+				]
+			},
+			{
+				"title" : "To view the merge conflicts",
+				"commands" : [
+					{
+						"cmd": "git diff",
+						"tip": "complete conflict diff"
+					},
+					{
+						"cmd": "git diff --base $file",
+						"tip": "against base file"
+					},
+					{
+						"cmd": "git diff --ours $file",
+						"tip": "against your changes"
+					},
+					{
+						"cmd": "git diff --theirs $file",
+						"tip": "against other changes"
+					}
+				]
+			},
+			{
+				"title" : "To discard conflicting patch",
+				"commands" : [
+					{
+						"cmd": "git reset --hard"
+					},
+					{
+						"cmd": "git rebase --skip"
+					}
+				]
+			},
+			{
+				"title" : "After resolving conflicts",
+				"commands" : [
+					{
+						"cmd": "git add $conflicting_file",
+						"tip": "do for all resolved files"
+					},
+					{
+						"cmd": "git rebase --continue"
+					}
+				]
 			}
 		]
 	}

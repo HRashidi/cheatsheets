@@ -21,7 +21,7 @@ const Header = ({onChange}) => {
 			</div>
 		</div>
 		<div className="search-container">
-			<SearchBar handleChange={handleChange}/>
+			<SearchBar onChange={handleChange}/>
 		</div>
 		
 	</div>

@@ -4,13 +4,8 @@ import Header from '../../components/header/header.component';
 import Breadcrumb from '../../components/breadcrumb/breadcrumb.component';
 
 import CheatBoard from '../../components/cheat-board/cheat-board.component';
-// fetch(`/src/data/${dataName}.json`)
-// 		.then((res) => res.json())
-// 		.then((videos) => videos.filter((video) => {
-// 		return video.id === videoID;
-// 		}))
-// 		.then((matched) => setVideo(matched[0]));
-// 	}, []);
+import Spinner from '../../components/spinner/spinner.component';
+
 import './cheat-page.styles.scss';
 
 const CheatPage = ({match}) => {
@@ -19,48 +14,45 @@ const CheatPage = ({match}) => {
 	let bread_items = [
 		{title: 'Home', routeName: `/`},
 		{title: dataName, routeName: `/${dataName}`},
-	]
-	// const [ video, setVideo ] = React.useState(null); // 'video', not 'videos'
-	// const { dataName } = React.useParams();
-	console.log(dataName);
-	// React.useEffect(() => {
-	// fetch(`/src/data/${dataName}.json`)
-	// 	.then(res => res.body)
-	// 	.then(body => body.getReader())
-	// 	.then(data => console.log(data))
-	// }, []);
-	// const [filteredProducts, setFilterProducts] = React.useState(products);
+	];
+
+	const [isLoaded, setLoaded] = React.useState(false);
+	const [boards,   setBoards ] = React.useState([]);
+	React.useEffect(() => {
+		async function fetchData(dataName) {
+			let url = `${process.env.PUBLIC_URL}/data/${dataName}.data.json`;
+			let res = await fetch(url);
+			let boards = await res.json();
+			setBoards(boards);
+			setLoaded(true);
+		};
+		fetchData(dataName);
+	}, [dataName]);
+
+	const [searchValue, setSearchValue] = React.useState("");
 
 	const handleChange = e => {
 		let { value } = e.target;
-		searchFn(value);
+		setSearchValue(value);
 	};
-	
-	const searchFn = value => {
-		// let ـfilteredProducts = products.filter(item =>
-		// 	item.name.toLowerCase().includes(value.toLowerCase()));
-		// setFilterProducts(ـfilteredProducts);
-	};
+
 	return (
 		<div className="cheat-page">
 			<Header onChange={handleChange}/>
 			<Breadcrumb items={bread_items} />
-
-			<div className="board-container">
-				<CheatBoard />
-				<CheatBoard />
-				<CheatBoard />
-				<CheatBoard />
-				<CheatBoard />
-				<CheatBoard />
-				<CheatBoard />
-				<CheatBoard />
-				<CheatBoard />
-				<CheatBoard />
-				<CheatBoard />
-				<CheatBoard />
-				<CheatBoard />
-			</div>
+			{
+				isLoaded ?
+				<div className="board-container">
+					{
+						boards.map(
+							board => <CheatBoard key={board._id} board={board} searchValue={searchValue}/>
+						)
+					}
+				</div>
+				:
+				<Spinner />
+			}
+			
 			
 		</div>
 	)
