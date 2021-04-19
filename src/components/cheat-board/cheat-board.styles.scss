@@ -5,7 +5,9 @@
 	border-radius: .5rem;
 	background-color: #5F2B65aa;
 	margin: .5rem;
-	
+	padding: 1rem;
+	text-align: left;
+
 	@include respond-below(md) {
 		width: 30%;
 	}
@@ -18,25 +20,52 @@
 		width: 80%;
 	}
 
-	.board-card-title {
-		color: blue;
-		
-		&.inactive {
-			color: red;
-		}
+	.board-title {
+		color: white;
+		font-size: 1.5rem;
+		font-weight:bold;
+		border-bottom: solid 1px #ccc;
+		padding-bottom: .8rem;
 	}
 
-	.cmd  {
-		color: blue;
-		&.inactive {
-			color: red;
-		}
-	}
+	.board-card {
+		margin-bottom: 2rem;
+		word-break:break-all;
 
-	.tip  {
-		color: blue;
-		&.inactive {
-			color: red;
+		.board-card-title {
+			font-size: 1rem;
+			font-weight:bold;
+			color:#f4fcbb;
+			margin-bottom: 0rem;
+			
+			&.inactive {
+				color: $color-inactive;
+			}
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			li {
+				margin: .3rem 0;
+			}
+		}
+		.cmd  {
+			color: $color-title-fg;
+			&.inactive {
+				color: $color-inactive;
+			}
+		}
+	
+		.tip  {
+			color:#999;
+			padding-left: 1rem;
+			font-size: 1rem;
+			font-style: italic;
+			&.inactive {
+				color: $color-inactive;
+			}
 		}
 	}
 }
