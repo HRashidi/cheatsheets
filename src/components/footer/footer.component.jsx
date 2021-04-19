@@ -11,7 +11,7 @@ const Footer = () => {
 	let FaGithubUrl  = "https://github.com/hrashidi";
 
 	return(
-    <div className="footer">
+	<div className="footer">
 		<div className="social-media">
 			<div className="social-media">
 				<a className="icon" target="_blank" rel="noopener noreferrer" href={whatsAppUrl} ><FaWhatsapp  size={28} color='#25D366' /></a>
