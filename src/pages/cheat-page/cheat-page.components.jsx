@@ -18,13 +18,21 @@ const CheatPage = ({match}) => {
 
 	const [isLoaded, setLoaded] = React.useState(false);
 	const [boards,   setBoards ] = React.useState([]);
+	const [error,   setError ] = React.useState(null);
 	React.useEffect(() => {
 		async function fetchData(dataName) {
-			let url = `${process.env.PUBLIC_URL}/data/${dataName}.data.json`;
-			let res = await fetch(url);
-			let boards = await res.json();
-			setBoards(boards);
-			setLoaded(true);
+			try {
+				let url = `${process.env.PUBLIC_URL}/data/${dataName}.data.json`;
+				let res = await fetch(url);
+				let boards = await res.json();
+				setBoards(boards);
+				
+			} catch (error) {
+				setError("Can't fetch the data");
+			} finally {
+				setLoaded(true);
+			}
+			
 		};
 		fetchData(dataName);
 	}, [dataName]);
@@ -42,6 +50,11 @@ const CheatPage = ({match}) => {
 			<Breadcrumb items={bread_items} />
 			{
 				isLoaded ?
+				error ? 
+				<div className="error-container">
+					<p className="message">{error}</p>
+				</div>
+				:
 				<div className="board-container">
 					{
 						boards.map(

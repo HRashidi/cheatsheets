@@ -21,6 +21,10 @@
 				height: 100%;
 				object-fit: cover;
 			}
+
+			&:hover {
+				animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+			}
 		}
 	}
 
@@ -28,5 +32,9 @@
 		display: flex;
 		flex-flow: row wrap;
 		padding: 1rem 10rem;
+
+		@include respond-below(sm) {
+			padding: 1rem 1rem;
+		}
 	}
 }

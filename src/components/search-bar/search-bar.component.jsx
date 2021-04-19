@@ -11,7 +11,9 @@ const SearchBar = ({ onChange }) => {
 	}
 	return (
 	<div className="search-bar">
-		<SearchingIcon className="icon" />
+		<div className="icon-container">
+			<SearchingIcon className="icon" />
+		</div>
 		<FormInput 
 			type='search'
 			name='search'

@@ -1,7 +1,7 @@
 @import '../../styles/global.styles.scss';
 .cheat-page {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column wrap;
 	flex-grow: 1;
 	background: url("../../assets/images/background.jpg") fixed center;
 	padding: 4rem 2rem 1rem 2rem;
@@ -10,5 +10,19 @@
 		// https://stackoverflow.com/questions/34677003/css-flexbox-divs-auto-change-order-to-fill-empty-space
 		display: flex;
 		flex-flow: row wrap;
+	}
+
+	.error-container {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		justify-content: center;
+		margin-top: 20vh;
+		.message {
+			padding: 1rem;
+			border: solid 1px $color-error;
+			border-radius: .3rem;
+			color: $color-error;
+		}
 	}
 }

@@ -4,6 +4,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
+	padding: 0 2rem;
 	height: 3.5rem;
 	width: 100%;
 	background-color: #000000aa;
@@ -12,15 +13,19 @@
 	flex-flow: row nowrap;
 	align-items: center;
 
+	@include respond-below(ms) {
+		padding: 0 1rem;
+	}
+
 	.logo-container {
-		@include respond-below(sm) {
+		@include respond-below(xs) {
 			display: none;
 		}
-		padding-left: 1rem;
 		display: flex;
 		flex-flow: row nowrap;
 		align-items: center;
 		flex-grow: 1;
+
 		.title {
 			color: $color-title-fg;
 			display: inline-block;
@@ -42,8 +47,8 @@
 
 	.search-container {
 		flex-grow: 0;
-		width: 15rem;
-		@include respond-below(sm) {
+		width: 20rem;
+		@include respond-below(xs) {
 			flex-grow: 1;
 			width: 100vw;
 		}

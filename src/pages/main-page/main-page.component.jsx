@@ -17,7 +17,7 @@ const MainPage = () => (
 		<div className="tools-container">
 			{
 				Tools.map(
-					tool => <ToolIcon id={tool._id} {...tool} />
+					tool => <ToolIcon key={tool._id} {...tool} />
 				)
 			}
 		</div>
