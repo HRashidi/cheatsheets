@@ -8,6 +8,8 @@ import Spinner from '../../components/spinner/spinner.component';
 
 import './cheat-page.styles.scss';
 
+const colorList = ['#48456A', '#57562D', '#26656C', '#2F632E', '#2F4F3B', '#58572E', '#3C434A', '#5F2B65', '#55262E', '#5A2B33'];
+
 const CheatPage = ({match}) => {
 
 	let dataName = match.params.name;
@@ -58,7 +60,7 @@ const CheatPage = ({match}) => {
 				<div className="board-container">
 					{
 						boards.map(
-							board => <CheatBoard key={board._id} board={board} searchValue={searchValue}/>
+							(board, index) => <CheatBoard key={board._id} board={board} color={colorList[index % 10]} searchValue={searchValue}/>
 						)
 					}
 				</div>
