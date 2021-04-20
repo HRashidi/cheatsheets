@@ -59,7 +59,7 @@ const CheatPage = ({match}) => {
 				:
 				<div className="board-container">
 					{
-						boards.map(
+						boards.length && boards.map(
 							(board, index) => <CheatBoard key={board._id} board={board} color={colorList[index % 10]} searchValue={searchValue}/>
 						)
 					}

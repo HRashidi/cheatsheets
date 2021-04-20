@@ -1,12 +1,21 @@
 [
 	{
-		"title": "init",
-		"url" : "hello",
-		"color": "green",
-		"command": [
+		"_id" : 1,
+		"title" : "Init Docker",
+		"cards" : [
 			{
-				"title": "git init",
-				"example": "git init"
+				"title" : "From existing directory",
+				"commands" : [
+					{
+						"cmd": "cd project_dir"
+					},
+					{
+						"cmd": "git init"
+					},
+					{
+						"cmd": "git add ."
+					}
+				]
 			}
 		]
 	}
